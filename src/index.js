@@ -51,7 +51,7 @@ function loadWidget(config) {
             const domains = {
                 "baidu": "百度",
                 "so": "360搜索",
-                "google": "谷歌搜索"
+                "google": "Google搜索"
             };
             if (location.hostname === referrer.hostname) return text;
 
@@ -127,8 +127,15 @@ function loadWidget(config) {
     }
 
     (function initModel() {
-        let modelId = localStorage.getItem("modelId"),
-            modelTexturesId = localStorage.getItem("modelTexturesId");
+        // 下面這兩行是能讓使用者在localstorage自己換
+        // let modelId = localStorage.getItem("modelId"),
+        //     modelTexturesId = localStorage.getItem("modelTexturesId");
+
+        // 這邊是我自己下的 直接設定他要顯示什麼樣子
+        let modelId = 1;
+        let modelTexturesId = 53; // 我可以改成在預定數字內隨機產生一個數字當服裝
+
+
         if (modelId === null) {
             // 首次访问加载 指定模型 的 指定材质
             modelId = 1; // 模型 ID
