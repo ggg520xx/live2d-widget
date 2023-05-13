@@ -18,7 +18,8 @@ function showHitokoto() {
             const randomObject = result[randomIndex]; // 选择随机索引对应的对象
 
             const text = `這句是來自 <span>「${randomObject.from}」</span>，是 <span>${randomObject.creator}</span> 在 HolaCamp露營網 編寫的。`;
-            showMessage(result.hitokoto, 6000, 9);
+            showMessage(randomObject.hitokoto, 6000, 9);
+            
             setTimeout(() => {
                 showMessage(text, 4000, 9);
             }, 6000);
