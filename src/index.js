@@ -128,12 +128,11 @@ function loadWidget(config) {
 
     (function initModel() {
         // 下面這兩行是能讓使用者在localstorage自己換
-        // let modelId = localStorage.getItem("modelId"),
-        //     modelTexturesId = localStorage.getItem("modelTexturesId");
+        let modelId = localStorage.getItem("modelId"),
+            modelTexturesId = localStorage.getItem("modelTexturesId");
 
-        // 這邊是我自己下的 直接設定他要顯示什麼樣子
-        let modelId = 0;
-        let modelTexturesId = 0; // 我可以改成在預定數字內隨機產生一個數字當服裝
+        // 我想自己下的 直接設定他要顯示什麼樣子
+        // 我可以改成在預定數字內隨機產生一個數字當服裝
 
 
         if (modelId === null) {
