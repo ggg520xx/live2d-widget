@@ -1,10 +1,10 @@
 {
 	"mouseover": [{
 		"selector": "#live2d",
-		"text": ["在幹嘛！，快把手拿開～～", "滑鼠不是放這裡的！", "你要做什麼！？", "喵喵喵？", "怕怕(ノ≧∇≦)ノ", "亂摸呀！救命！", "這樣的话，只能使用武力了！", "我要生氣了", "不要動手動腳的！", "真…真的是不知羞耻！", "Hentai！"]
+		"text": ["在幹嘛！，快把手拿開～～", "滑鼠不是放這裡的！", "你要做什麼！？", "喵喵喵？", "怕怕(ノ≧∇≦)ノ", "亂摸呀！救命！", "這樣的话，只能使用武力了！", "我要生氣了", "不要動手動腳的！", "該決定去哪玩了，不是摸我！", "再靠近我要叫了"]
 	}, {
 		"selector": "#waifu-tool-hitokoto",
-		"text": ["猜猜我要说些什么？", "我从青蛙王子那里听到了不少人生经验。"]
+		"text": ["猜猜我會說些什麼？", "來看看其他人都留些什麼吧～"]
 	}, {
 		"selector": "#waifu-tool-asteroids",
 		"text": ["要不要来玩飞机大战？", "这个按钮上写着「不要点击」。", "怎么，你想来和我玩个游戏？", "听说这样可以蹦迪！"]
@@ -130,10 +130,16 @@
 		"text": ["QQ 空间，一键转发，耶～"]
 	}, {
 		"selector": ".need-share-button_twitter",
-		"text": ["Twitter？好像是不存在的东西？"]
+		"text": ["Twitter..目前貌似也不存在？"]
 	}, {
 		"selector": ".need-share-button_facebook",
-		"text": ["emmm…FB 好像也是不存在的东西？"]
+		"text": ["emmm…FB 目前是不存在的東西 QAQ"]
+	}, {
+		"selector": ".need-share-button_ig",
+		"text": ["恩..那個這個也 尚未有社群連結（躲"]
+	}, {
+		"selector": ".need-share-button_line",
+		"text": ["所以說 Line的也沒有囉"]
 	}, {
 		"selector": ".post-nav-item a[rel='next']",
 		"text": ["来看看下一篇文章吧。", "点它可以看下一篇文章哦！", "要翻到下一篇文章吗？"]
