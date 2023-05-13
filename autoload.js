@@ -2,7 +2,7 @@
 const live2d_path = "https://fastly.jsdelivr.net/gh/ggg520xx/live2d-widget/";
 //const live2d_path = "/live2d-widget/";
 
-// ai tag
+// ai tag ai1
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
