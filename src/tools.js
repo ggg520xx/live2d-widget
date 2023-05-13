@@ -10,10 +10,14 @@ import showMessage from "./message.js";
 
 function showHitokoto() {
     // 增加 hitokoto.cn 的 API
-    fetch("https://v1.hitokoto.cn")
+    fetch("http://localhost:3000/talks")
         .then(response => response.json())
         .then(result => {
-            const text = `这句一言来自 <span>「${result.from}」</span>，是 <span>${result.creator}</span> 在 hitokoto.cn 投稿的。`;
+
+            const randomIndex = Math.floor(Math.random() * result.length); // 随机选择一个索引
+            const randomObject = result[randomIndex]; // 选择随机索引对应的对象
+
+            const text = `這句是來自 <span>「${randomObject.from}」</span>，是 <span>${randomObject.creator}</span> 在 HolaCamp露營網 編寫的。`;
             showMessage(result.hitokoto, 6000, 9);
             setTimeout(() => {
                 showMessage(text, 4000, 9);

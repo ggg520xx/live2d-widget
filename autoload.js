@@ -39,7 +39,10 @@ if (screen.width >= 768) {
 			// apiPath: "https://live2d.fghrsh.net/api/",
 			// apiPath: "https://fastly.jsdelivr.net/gh/ggg520xx/live2d-widget/waifu-tips.json",
 			cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
-			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+
+			// 個人只想留對話
+			// tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+			tools: ["hitokoto"]
 		});
 	});
 }

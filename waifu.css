@@ -79,7 +79,6 @@
 
 /* -------------------------- */
 #waifu-tool {
-	display:none;   // 這是我自己加的 不想因為按鈕影響
 	color: #aaa;
 	opacity: 0;
 	position: absolute;
