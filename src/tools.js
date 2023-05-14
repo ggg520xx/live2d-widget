@@ -29,19 +29,19 @@ function showHitokoto() {
 
 
 
-            const text = `這句話是 <span>${randomObject.from_who}</span>，來自 <span>「${randomObject.from}」</span> 在 HolaCamp露營網 的留言。`;
-            showMessage(randomObject.hitokoto, 6000, 9); // 這段文字展示6秒 字體大小9
+            const text = `這句是 <span>${randomObject.from_who}</span>，來自 <span>「${randomObject.from}」</span> 在 HolaCamp露營網 的留言。`;
+            showMessage(randomObject.hitokoto, 5000, 9); // 這段文字展示5秒 字體大小9
 
             isShowingMessage = true; // 标记消息 正在显示中
 
             setTimeout(() => {
                 showMessage(text, 4000, 9);
-            }, 6000);
-            // 接續上面的展示6秒  6秒後展示這段誰說的  展示4秒  字體大小9
+            }, 5000);
+            // 接續上面的展示5秒  5秒後展示這段誰說的  展示4秒  字體大小9
 
             setTimeout(() => {
                 isShowingMessage = false; // 标记消息已经显示完毕  10秒才轉換為可再次使用點擊 進行上面顯示的10秒延遲
-            }, 10000);
+            }, 9000);
 
         });
 }
