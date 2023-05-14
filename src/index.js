@@ -26,17 +26,8 @@ function loadWidget(config) {
         for (let tool of config.tools) {
             if (tools[tool]) {
                 const { icon, callback } = tools[tool];
-                
-                let lastClickTime = 0;
                 document.getElementById("waifu-tool").insertAdjacentHTML("beforeend", `<span id="waifu-tool-${tool}">${icon}</span>`);
-                document.getElementById(`waifu-tool-${tool}`).addEventListener("click", () => {
-                    const now = new Date().getTime();
-                    if (now - lastClickTime < 500) { // 如果两次点击间隔小于500毫秒，不执行操作
-                        return;
-                    }
-                    // 其他操作
-                    lastClickTime = now;
-                });
+                document.getElementById(`waifu-tool-${tool}`).addEventListener("click", callback.stop());
             }
         }
     })();
