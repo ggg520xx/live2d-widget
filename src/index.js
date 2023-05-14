@@ -27,7 +27,7 @@ function loadWidget(config) {
             if (tools[tool]) {
                 const { icon, callback } = tools[tool];
                 document.getElementById("waifu-tool").insertAdjacentHTML("beforeend", `<span id="waifu-tool-${tool}">${icon}</span>`);
-                document.getElementById(`waifu-tool-${tool}`).addEventListener("click", callback.stop());
+                document.getElementById(`waifu-tool-${tool}`).addEventListener("click", callback);
             }
         }
     })();

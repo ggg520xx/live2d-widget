@@ -8,7 +8,17 @@ import fa_xmark from "@fortawesome/fontawesome-free/svgs/solid/xmark.svg";
 
 import showMessage from "./message.js";
 
+
+
+let isShowingMessage = false; // 變數更改 控制消息是否已經顯示中 等待延遲顯示 顯示會轉true 顯示過後才會轉換回false
+
 function showHitokoto() {
+
+    // 如果消息正在显示中為true，则不會馬上执行下一個fetch的代碼 false才下跑
+    if (isShowingMessage) {
+        return;
+    }
+
     // 增加 hitokoto.cn 的 API
     fetch("http://localhost:3000/talks")
         .then(response => response.json())
@@ -19,9 +29,12 @@ function showHitokoto() {
 
             const text = `這句是來自 <span>「${randomObject.from}」</span>，是 <span>${randomObject.creator}</span> 在 HolaCamp露營網 編寫的。`;
             showMessage(randomObject.hitokoto, 6000, 9);
-            
+
+            isShowingMessage = true; // 标记消息正在显示中
+
             setTimeout(() => {
                 showMessage(text, 4000, 9);
+                isShowingMessage = false; // 标记消息已经显示完毕
             }, 6000);
         });
 }
