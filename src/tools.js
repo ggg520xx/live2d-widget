@@ -29,7 +29,7 @@ function showHitokoto() {
 
 
 
-            const text = `這句是來自 <span>「${randomObject.from}」</span>，是 <span>${randomObject.creator}</span> 在 HolaCamp露營網 編寫的。`;
+            const text = `這句話是 <span>「${randomObject.from_who}」</span>，來自 <span>${randomObject.from}</span> 在 HolaCamp露營網 的留言。`;
             showMessage(randomObject.hitokoto, 5000, 9); // 這段文字展示5秒 字體大小9
 
             isShowingMessage = true; // 标记消息 正在显示中
