@@ -50,6 +50,9 @@
 	}, {
 		"selector": ".need-share-button_line",
 		"text": ["所以說 Line的也沒有囉"]
+	}, {
+		"selector": "#submit_cancel",
+		"text": ["確定取消後，就無法回復囉，確定嗎？"]
 	}],
 	"click": [{
 		"selector": "#live2d",
@@ -57,6 +60,9 @@
 	}, {
 		"selector": "#input_search",
 		"text": ["耶～終於要去旅遊了嗎？", "好期待～這次要去哪呢？", "可以帶上我的小熊一起嗎？"]
+	}, {
+		"selector": "#cancelOrder",
+		"text": ["選擇原因後才可以點擊取消訂單，取消後無法回復囉"]
 	},
 	{
 		"selector": "#search_result",
